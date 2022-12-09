@@ -1,0 +1,8 @@
+16:53:30 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+
+16:53:32 Build Finished. 0 errors, 0 warnings. (took 2s.145ms)
+

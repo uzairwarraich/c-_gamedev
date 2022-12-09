@@ -1,0 +1,10 @@
+!SESSION 2022-12-08 12:00:05.205 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-12-08 12:00:59.129
+!MESSAGE Indexed 'Vec2D' (3 sources, 241 headers) in 4.33 sec: 23,276 declarations; 47,206 references; 0 unresolved inclusions; 10 syntax errors; 27 unresolved names (0.038%)

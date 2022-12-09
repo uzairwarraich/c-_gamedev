@@ -1,0 +1,78 @@
+12:01:18 **** Rebuild of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/utils.o ../src/utils/utils.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+Info: Nothing to build for Vec2D
+12:43:54 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+12:51:24 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+12:57:29 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+../src/utils/Vec2d.cpp:21:7: error: ‘Vec2d Vec2d::operator*(float, const Vec2d&)’ must have either zero or one argument
+   21 | Vec2d Vec2d::operator*(float scalar, const Vec2d& vec){
+      |       ^~~~~
+12:59:01 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+12:59:19 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+16:14:01 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+../src/utils/Vec2d.cpp: In member function ‘Vec2d Vec2d::operator-(const Vec2d&) const’:
+../src/utils/Vec2d.cpp:83:42: error: expected ‘;’ before ‘:’ token
+   83 |         return Vec2d(mX-vec.mX,mY-vec.mY):
+      |                                          ^
+      |                                          ;
+../src/utils/Vec2d.cpp:83:42: error: expected primary-expression before ‘:’ token
+16:14:12 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+16:52:13 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+../src/Main.cpp: In function ‘int main()’:
+../src/Main.cpp:32:18: error: ‘a’ was not declared in this scope
+   32 |         int &p = a;
+      |                  ^
+16:52:44 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+Info: Nothing to build for Vec2D
+16:53:18 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+16:53:30 **** Incremental Build of configuration Debug for project Vec2D ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
+g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
