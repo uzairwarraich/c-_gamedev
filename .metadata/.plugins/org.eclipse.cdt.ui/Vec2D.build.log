@@ -1,10 +1,6 @@
-22:00:15 **** Rebuild of configuration Debug for project Vec2D ****
+00:04:50 **** Clean-only build of configuration Debug for project Vec2D ****
 Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-Info: Internal Builder is used for build
-g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/Vec2d.o ../src/utils/Vec2d.cpp 
-g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/utils/utils.o ../src/utils/utils.cpp 
-g++ -I/home/uzair/eclipse-workspace/Vec2D/src/utils -I/home/uzair/eclipse-workspace/Vec2D/src/utils -O0 -g3 -Wall -c -fmessage-length=0 -o src/Main.o ../src/Main.cpp 
-g++ -o Vec2D src/Main.o src/utils/Vec2d.o src/utils/utils.o 
+rm -rf src/Main.o src/utils/utils.d src/utils/Vec2d.d src/utils/utils.o Vec2D src/Main.d src/utils/Vec2d.o 
 
-22:00:20 Build Finished. 0 errors, 0 warnings. (took 4s.556ms)
+00:04:51 Build Finished. 0 errors, 0 warnings. (took 869ms)
 

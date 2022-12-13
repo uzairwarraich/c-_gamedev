@@ -146,4 +146,23 @@ float Vec2d::Dot(const Vec2d& vec) const{
 	return mX * vec.mX + mY*vec.mY;
 }
 
+Vec2d Vec2d::ProjectOnto(const Vec2d& vec2) const{
+
+	float mag2 = vec2.Mag2();
+	if(IsLessThanOrEqual(mag2,EPSILON)){
+
+		return Vec2d::Zero;
+
+	}
+
+	float dot = Dot(vec2);
+
+	return vec2 * (dot/mag2);
+
+}
+
+float Vec2d::AngleBetween(const Vec2d& vec2) const{
+
+	return acosf(GetUnitVec().Dot(vec2.GetUnitVec()));
+}
 

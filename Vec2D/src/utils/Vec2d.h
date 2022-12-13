@@ -75,6 +75,9 @@ public:
 
 
 
+	Vec2d ProjectOnto(const Vec2d& vec2) const;
+
+	float AngleBetween(const Vec2d& vec2) const;
 
 private:
 	float mX,mY;
