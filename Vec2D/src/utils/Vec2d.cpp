@@ -12,6 +12,11 @@
 #include <cassert>
 #include <cmath>
 
+
+const Vec2d Vec2d::Zero;
+
+
+
 std::ostream& operator<<(std::ostream& consoleOut, const Vec2d& vec){
 
 	std::cout << "X: " << vec.mX << " Y: " << vec.mY << std::endl;
@@ -95,6 +100,50 @@ Vec2d& Vec2d::operator-=(const Vec2d& vec){
 	return *this;
 }
 
+float Vec2d::Mag() const{
 
+	return sqrt(Mag2());
+}
+
+float Vec2d::Mag2() const{
+
+	return mX*mX +mY*mY;
+}
+
+
+Vec2d Vec2d::GetUnitVec() const{
+
+	float mag =Mag();
+
+	if(mag > EPSILON){
+
+		return *this/mag;
+	}
+
+	return Vec2d::Zero;
+}
+
+Vec2d& Vec2d::Normalize(){
+
+	float mag =Mag();
+
+		if(mag > EPSILON){
+
+			 *this/=mag;
+		}
+
+		return *this;
+}
+
+float Vec2d::Distance(const Vec2d& vec) const {
+
+	return (vec - *this).Mag();
+}
+
+
+float Vec2d::Dot(const Vec2d& vec) const{
+
+	return mX * vec.mX + mY*vec.mY;
+}
 
 

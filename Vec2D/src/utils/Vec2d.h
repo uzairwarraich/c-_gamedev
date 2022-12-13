@@ -11,6 +11,9 @@
 class Vec2d{
 
 public:
+
+	static const Vec2d Zero;
+
 	Vec2d():Vec2d(0,0){
 
 	}
@@ -53,11 +56,22 @@ public:
 	Vec2d operator-(const Vec2d& vec) const;
 	Vec2d& operator+=(const Vec2d& vec);//no const because this will change the original vector and give a new one
 	Vec2d& operator-=(const Vec2d& vec);
+    //The functions that change the original vector have a return type of a reference(&) and are not passed by value
 
 
-	//The functions that change the original vector have a return type of a reference(&) and are not passed by value
+	//magnitude of vectors
+	float Mag() const;
+	float Mag2() const;
+
+	Vec2d GetUnitVec() const;
+
+	//Normalizes the vector and passes itself back thats why Vec2d& is the return type
+	Vec2d& Normalize();
 
 
+	float Distance(const Vec2d& vec) const;
+
+	float Dot(const Vec2d& vec) const;
 
 
 
