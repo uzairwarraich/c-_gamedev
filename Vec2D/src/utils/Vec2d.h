@@ -4,7 +4,6 @@
  *  Created on: Dec. 4, 2022
  *      Author: uzair
  */
-
 #ifndef VEC2D_H_
 #define VEC2D_H_
 #include <iostream>
@@ -78,6 +77,13 @@ public:
 	Vec2d ProjectOnto(const Vec2d& vec2) const;
 
 	float AngleBetween(const Vec2d& vec2) const;
+
+	Vec2d Reflect(const Vec2d& normal) const;
+
+	void Rotate(float angle , const Vec2d& aroundPoint);
+
+	Vec2d RotationResult(float angle,const Vec2d& vec) const;
+
 
 private:
 	float mX,mY;

@@ -166,3 +166,88 @@ float Vec2d::AngleBetween(const Vec2d& vec2) const{
 	return acosf(GetUnitVec().Dot(vec2.GetUnitVec()));
 }
 
+Vec2d Vec2d::Reflect(const Vec2d& normal) const{
+
+	//v - 2(v dot n)n
+
+	return *this -2 * ProjectOnto(normal);
+}
+
+void Vec2d::Rotate(float angle , const Vec2d& aroundPoint){
+
+	float cosine = cosf(angle);
+	float sine = sinf(angle);
+
+	Vec2d thisVec(mX,mY);
+
+	thisVec -= aroundPoint;
+
+	float xRot = thisVec.mX * cosine - thisVec.mY * sine;
+	float yRot = thisVec.mY * sine + thisVec.mY * cosine;
+
+
+	Vec2d rot = Vec2d(xRot,yRot);
+
+	*this = rot + aroundPoint;
+
+}
+
+Vec2d Vec2d::RotationResult(float angle,const Vec2d& aroundPoint) const{
+
+	float cosine = cosf(angle);
+	float sine = sinf(angle);
+
+	Vec2d thisVec(mX,mY);
+
+	thisVec -= aroundPoint;
+
+	float xRot = thisVec.mX * cosine - thisVec.mY * sine;
+	float yRot = thisVec.mY * sine + thisVec.mY * cosine;
+
+
+	Vec2d rot = Vec2d(xRot,yRot);
+
+	return  rot + aroundPoint;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
