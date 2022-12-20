@@ -1,3 +1,33 @@
-00:04:50 **** Clean-only build of configuration Debug for project Vec2D ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-rm -rf src/Main.o src/utils/utils.d src/utils/Vec2d.d src/utils/utils.o Vec2D src/Main.d src/utils/Vec2d.o 
+16:09:26 **** Build of configuration Debug for project ArcadeApp ****
+make all 
+Building file: ../src/utils/Vec2d.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utils/Vec2d.d" -MT"src/utils/Vec2d.o" -o "src/utils/Vec2d.o" "../src/utils/Vec2d.cpp"
+Finished building: ../src/utils/Vec2d.cpp
+ 
+Building file: ../src/utils/utils.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utils/utils.d" -MT"src/utils/utils.o" -o "src/utils/utils.o" "../src/utils/utils.cpp"
+Finished building: ../src/utils/utils.cpp
+ 
+Building file: ../src/ArcadeApp.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++17 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArcadeApp.d" -MT"src/ArcadeApp.o" -o "src/ArcadeApp.o" "../src/ArcadeApp.cpp"
+Finished building: ../src/ArcadeApp.cpp
+ 
+Building target: ArcadeApp
+Invoking: GCC C++ Linker
+g++  -o "ArcadeApp" ./src/utils/Vec2d.o ./src/utils/utils.o  ./src/ArcadeApp.o    -l"SDL" -l"SDL2"
+Finished building target: ArcadeApp
+ 
+rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;cp -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/src/Assets /Debug
+cp: cannot create directory '/Debug': Permission denied
+make[1]: [makefile:70: post-build] Error 1 (ignored)
+ 
+16:10:49 **** Incremental Build of configuration Debug for project ArcadeApp ****
+make all 
+make[1]: Nothing to be done for 'main-build'.
+rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;cp -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/src/Assets /Debug
+cp: cannot create directory '/Debug': Permission denied
+make[1]: [makefile:70: post-build] Error 1 (ignored)
+ 
