@@ -1,4 +1,10 @@
-16:09:26 **** Build of configuration Debug for project ArcadeApp ****
+13:35:45 **** Clean-only build of configuration Debug for project ArcadeApp ****
+make clean 
+rm -rf ./src/utils/Vec2d.d ./src/utils/Vec2d.o ./src/utils/utils.d ./src/utils/utils.o
+rm -rf ./src/ArcadeApp.d ./src/ArcadeApp.o
+rm -rf ArcadeApp
+ 
+13:35:48 **** Build of configuration Debug for project ArcadeApp ****
 make all 
 Building file: ../src/utils/Vec2d.cpp
 Invoking: GCC C++ Compiler
@@ -24,7 +30,7 @@ rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /ho
 cp: cannot create directory '/Debug': Permission denied
 make[1]: [makefile:70: post-build] Error 1 (ignored)
  
-16:10:49 **** Incremental Build of configuration Debug for project ArcadeApp ****
+13:38:10 **** Incremental Build of configuration Debug for project ArcadeApp ****
 make all 
 make[1]: Nothing to be done for 'main-build'.
 rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;cp -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/src/Assets /Debug
