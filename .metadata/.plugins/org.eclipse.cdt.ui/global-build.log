@@ -37,3 +37,10 @@ rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /ho
 cp: cannot create directory '/Debug': Permission denied
 make[1]: [makefile:70: post-build] Error 1 (ignored)
  
+13:57:29 **** Incremental Build of configuration Debug for project ArcadeApp ****
+make all 
+make[1]: Nothing to be done for 'main-build'.
+rm -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;mkdir /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/Debug/Assets;cp -rf /home/uzair/eclipse-workspace/c-_gamedev/ArcadeApp/src/Assets /Debug
+cp: cannot create directory '/Debug': Permission denied
+make[1]: [makefile:70: post-build] Error 1 (ignored)
+ 
